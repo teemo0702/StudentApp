@@ -1,0 +1,55 @@
+// Thanh ngang
+.nav-height {
+  min-height: 50px !important;
+  height: 50px !important;
+}
+
+button {
+  padding-right: 8px;
+}
+
+h1 {
+  padding-left: 8px;
+}
+
+.mat-button {
+  text-decoration: none;
+    padding: 0px 20px;
+    margin: 0px 20px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.mat-button:hover {
+  background: #ffbb00;
+  color: black;
+}
+
+.mat-button:active {
+  color: #f44336;
+}
+
+.active-link-toolbar {
+  background: #375E97;
+  color: white;
+}
+
+//Thanh dọc
+mat-sidenav {
+  min-width: 160px;
+}
+
+.mat-list-item:hover {
+  background: aqua;
+}
+
+.content-move-right {
+  margin-left: 170px !important;
+  transition: ease 0.2s;
+}
+
+.content-move-left {
+  margin-left: 10px !important;
+  transition: ease 0.1s;
+}
+

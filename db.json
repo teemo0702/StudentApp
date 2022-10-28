@@ -1,0 +1,197 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "code": "MSV-02",
+      "gender": "female",
+      "firstName": "Anh",
+      "lastName": "Dang",
+      "dob": "28/01/2001",
+      "email": "abc@gmail.com",
+      "phone": "123456",
+      "picture": ""
+    },
+    {
+      "code": "INSEE-2960130524812 83",
+      "gender": "female",
+      "firstName": "Julie",
+      "lastName": "Dumas",
+      "dob": "1996-02-15T08:11:00.855Z",
+      "email": "julie.dumas@example.com",
+      "phone": "05-04-05-23-07",
+      "picture": "https://randomuser.me/api/portraits/women/94.jpg",
+      "id": 7
+    },
+    {
+      "code": "SSN-686-42-5148",
+      "gender": "male",
+      "firstName": "Arnold",
+      "lastName": "Carroll",
+      "dob": "1982-01-10T03:45:52.001Z",
+      "email": "arnold.carroll@example.com",
+      "phone": "(318) 995-5818",
+      "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+      "id": 8
+    },
+    {
+      "code": "AVS-756.4365.8296.85",
+      "gender": "male",
+      "firstName": "Luan",
+      "lastName": "Bourgeois",
+      "dob": "1950-02-17T00:26:13.198Z",
+      "email": "luan.bourgeois@example.com",
+      "phone": "077 707 10 08",
+      "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+      "id": 9
+    },
+    {
+      "code": "INSEE-2590356767983 70",
+      "gender": "female",
+      "firstName": "Alexandra",
+      "lastName": "Lopez",
+      "dob": "1959-04-26T03:22:34.873Z",
+      "email": "alexandra.lopez@example.com",
+      "phone": "04-83-96-70-13",
+      "picture": "https://randomuser.me/api/portraits/women/53.jpg",
+      "id": 10
+    },
+    {
+      "code": "SSN-001-11-5567",
+      "gender": "male",
+      "firstName": "Fernando",
+      "lastName": "Thompson",
+      "dob": "1945-05-08T09:54:07.915Z",
+      "email": "fernando.thompson@example.com",
+      "phone": "(496) 678-8558",
+      "picture": "https://randomuser.me/api/portraits/men/92.jpg",
+      "id": 12
+    },
+    {
+      "code": "TFN-137817781",
+      "gender": "female",
+      "firstName": "Mabel",
+      "lastName": "Morrison",
+      "dob": "1984-11-04T10:35:31.479Z",
+      "email": "mabel.morrison@example.com",
+      "phone": "04-6483-8016",
+      "picture": "https://randomuser.me/api/portraits/women/67.jpg",
+      "id": 13
+    },
+    {
+      "code": "NINO-NM 81 09 62 E",
+      "gender": "male",
+      "firstName": "Clayton",
+      "lastName": "Morris",
+      "dob": "1953-05-03T09:26:34.132Z",
+      "email": "clayton.morris@example.com",
+      "phone": "01543 89784",
+      "picture": "https://randomuser.me/api/portraits/men/31.jpg",
+      "id": 14
+    },
+    {
+      "code": "NINO-LY 54 32 77 H",
+      "gender": "male",
+      "firstName": "Donald",
+      "lastName": "Coleman",
+      "dob": "1966-11-14T17:43:09.047Z",
+      "email": "donald.coleman@example.com",
+      "phone": "0161 938 2229",
+      "picture": "https://randomuser.me/api/portraits/men/40.jpg",
+      "id": 16
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "test json-server",
+      "author": "test typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comments",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "comment",
+      "postId": 1
+    },
+    {
+      "body": "Day la messenger so 4",
+      "postId": 1,
+      "id": 4
+    },
+    {
+      "code": "2",
+      "gender": "3",
+      "firstName": "1",
+      "lastName": "3",
+      "dob": "asd",
+      "email": "asd",
+      "phone": "2",
+      "picture": "1",
+      "id": 5
+    },
+    {
+      "code": "123",
+      "gender": "321",
+      "firstName": "123",
+      "lastName": "321",
+      "dob": "123",
+      "email": "123",
+      "phone": "312",
+      "picture": "213",
+      "id": 6
+    },
+    {
+      "code": "3",
+      "gender": "5",
+      "firstName": "1",
+      "lastName": "2",
+      "dob": "4",
+      "email": "7",
+      "phone": "6",
+      "picture": "8",
+      "id": 7
+    },
+    {
+      "code": "3",
+      "gender": "4",
+      "firstName": "1",
+      "lastName": "2",
+      "dob": "5",
+      "email": "7",
+      "phone": "6",
+      "picture": "8",
+      "id": 8
+    },
+    {
+      "code": "3",
+      "gender": "4",
+      "firstName": "1",
+      "lastName": "2",
+      "dob": "5",
+      "email": "7",
+      "phone": "6",
+      "picture": "8",
+      "id": 9
+    },
+    {
+      "body": "Day la messenger so 4",
+      "postId": 1,
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "Duc",
+    "age": 18,
+    "gender": "male"
+  }
+}

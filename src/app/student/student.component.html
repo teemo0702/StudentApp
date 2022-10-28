@@ -1,0 +1,65 @@
+<div>
+  <button mat-raised-button color="accent" style="padding-left: 12px;" (click)="addSV()">
+    <mat-icon>add_circle</mat-icon>
+    Add Student
+  </button>
+  <br>
+  <br>
+  <h1>
+    Số lượng sinh viên hiện có:
+    <span style="color: red;">
+      {{students.length}}
+    </span>
+  </h1>
+  <table id="customers" style="border-collapse: collapse;">
+    <tr>
+      <th style="text-align: center;" (click)="sortById()">
+        Id
+      </th>
+      <th style="text-align: center;">Name</th>
+      <th style="text-align: center;">
+        Code
+        <mat-icon
+          style="cursor: pointer; vertical-align: bottom"
+          (click)="sortByCode('down')"
+        >
+          arrow_drop_down
+        </mat-icon>
+        <mat-icon
+          style="cursor: pointer; vertical-align: bottom"
+          (click)="sortByCode('up')"
+        >
+          arrow_drop_up
+        </mat-icon>
+      </th>
+      <th style="text-align: center;">Gender</th>
+      <th style="text-align: center;">Birthday</th>
+      <th style="text-align: center;">Phone</th>
+      <th style="text-align: center;">Email</th>
+      <th style="text-align: center;">Picture</th>
+      <th style="text-align: center;">Action</th>
+    </tr>
+    <tr *ngFor="let student of students">
+      <td style="text-align: center;">{{ student?.id }}</td>
+      <td>{{ student?.lastName }} {{ student?.firstName }}</td>
+      <td>{{ student?.code }}</td>
+      <td>{{ student?.gender }}</td>
+      <td>{{ student?.dob }}</td>
+      <td>{{ student?.phone }}</td>
+      <td>{{ student?.email }}</td>
+      <td align="center">
+        <img *ngIf="student?.picture" src="{{student?.picture}}" height="50">
+      </td>
+      <td style="text-align: center;">
+        <button mat-raised-button color="accent" style="cursor: pointer; padding-left: 8px; margin-right: 16px;" title="Nhấn vào để sửa" (click)="editSV(student.id)">
+          <mat-icon style="font-size: 16px; vertical-align: text-top;">create</mat-icon>
+          Edit
+        </button>
+        <button mat-raised-button color="accent" style="cursor: pointer; padding-left: 8px" title="Nhấn vào để xóa" (click)="deleteSV(student.id)">
+          <mat-icon style="font-size: 16px; vertical-align: text-top;">delete</mat-icon>
+          Delete
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

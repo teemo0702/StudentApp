@@ -1,0 +1,81 @@
+<div class="container">
+  <h1 style="text-align: center;">Form add Student</h1>
+  <form [formGroup]="studentForm" style="text-align: center;">
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput appAutoFocusInput placeholder="Duc" formControlName="firstName" required />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Tran" formControlName="lastName" required />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Code</mat-label>
+      <input matInput placeholder="MSV-01" formControlName="code" required />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Gender</mat-label>
+      <input matInput placeholder="male" formControlName="gender" required />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Birthday</mat-label>
+      <input matInput placeholder="31/12/2001" formControlName="dob" />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Phone</mat-label>
+      <input matInput placeholder="058****654" formControlName="phone" />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="abc@gmail.com" formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field class="form-header" appearance="fill">
+      <mat-label>Hình</mat-label>
+      <input matInput placeholder="" formControlName="picture" />
+    </mat-form-field>
+    <br>
+    <div style="margin-top: 24px">
+      <button
+        type="submit"
+        [disabled]="!studentForm.valid"
+        mat-raised-button
+        color="accent"
+        (click)="save()"
+      >
+        Save <span *ngIf="id == 0" style="vertical-align: top">and new</span>
+      </button>
+      &nbsp;
+      <button
+        type="submit"
+        [disabled]="!studentForm.valid"
+        mat-raised-button
+        color="accent"
+        (click)="saveAndReturn()"
+      >
+        Save and return
+      </button>
+      &nbsp;
+      <button
+        type="submit"
+        [disabled]="studentForm.valid"
+        mat-raised-button
+        color="accent"
+        (click)="randomSV()"
+        *ngIf="id == 0"
+      >
+        Random Student
+      </button>
+    </div>
+  </form>
+</div>
+<br>
+<div style="text-align: center">
+  <button mat-raised-button color="accent" (click)="returnStudent()">Return</button>
+</div>
